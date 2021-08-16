@@ -2,7 +2,7 @@
 
 body {
     animation: loading 2s ease;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(96, 157, 159, 0.5);
     color: #1a2238;
     font-size: 2vw;
