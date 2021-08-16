@@ -1,0 +1,218 @@
+/* setting the default font family */
+
+body {
+    animation: loading 2s ease;
+    font-family: cursive;
+    background-color: rgba(96, 157, 159, 0.5);
+    color: #1a2238;
+    font-size: 2vw;
+    -webkit-touch-callout: none;/*for touchscreen devices*/
+	 /*for the user select*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes loading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* setting the link formats */
+
+a {
+    text-decoration: none;
+    font-style: italic;
+    color: darkblue;
+}
+
+a:hover {
+    color: darkorange;
+}
+
+a:visited {
+    color: green;
+}
+
+/* selecting every header */
+
+h1 {
+    font-family: 'MonteCarlo', cursive;
+    font-weight: 600;
+    font-size: 7vw;
+}
+
+h2 {
+    font-family: 'MonteCarlo', cursive;
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+/* setting the special header background */
+
+.header-content {
+    background: linear-gradient(to right, rgb(255, 186, 59), wheat, azure, lightblue, darkblue);
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    width: auto;
+}
+
+/* logo styles */
+
+#logo {
+    font-family: 'Style Script', cursive;
+    width: auto;
+    font-size: 15vw;
+    position: static;
+    display: inline-block;
+}
+
+/* the navbar code */
+
+ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: #1a2238;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul.navbar>li {
+    float: left;
+    padding: 1vh 0px;
+}
+
+ul.navbar a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 2.5vw;
+}
+
+ul.navbar a:hover {
+    transition: color 0.5s ease-out 0.01s;
+    color: #ff6a3d;
+}
+
+/* enabling dropdown, .dropdown needs no css properties, but it still works*/
+
+.dropdown {
+    float: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 3px;
+    background-color: #1a2238;
+    text-align: center;
+    opacity: 0.97;
+    width: 13vw;
+    overflow: auto;
+    border: 1vw solid rgba(255, 68, 0, 0.9);
+    border-radius: 10px;
+    height: min-content;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    padding: 10%;
+}
+
+/* .dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+/* making the navbar for smaller screens */
+
+ul.small-navbar {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: #1a2238;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.small-navbar>li {
+    float: left;
+}
+
+ul.small-navbar a {
+    color: whitesmoke;
+    text-decoration: none;
+    height: 3.3vw;
+}
+
+ul.small-navbar a:hover {
+    transition: color 0.5s ease-out 0.01s;
+    color: #ff6a3d;
+    cursor: pointer;
+}
+
+#menu {
+    margin: auto;
+}
+
+/* mobile dropdown */
+
+.mobile-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 17vw;
+    background-color: #1a2238;
+    text-align: center;
+    opacity: 0.97;
+    width: 15vw;
+    overflow: auto;
+    border: 1vw solid rgba(255, 68, 0, 0.9);
+    border-radius: 10px;
+}
+
+.mobile-dropdown-content a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    font-size: 3vw;
+    padding: 3vw;
+}
+
+div.mobile-dropdown-content a:nth-child(2) {
+    padding-bottom: 4vw;
+}
+
+.mobile-dropdown:hover .mobile-dropdown-content {
+    display: block;
+}
+
+/* creating media queries for small devices */
+
+@media screen and (min-width:800px) {
+    ul.small-navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width:799px) {
+    ul.navbar {
+        display: none;
+    }
+}
+
+footer {
+    margin-top: 15vh;
+    height: 30vh;
+    background-color: #1a2238;
+    color: aliceblue;
+    font-size: 2vw;
+    text-align: center;
+}

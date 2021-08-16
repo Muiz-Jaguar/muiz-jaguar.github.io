@@ -1,0 +1,19 @@
+-----------------------------------what to add-----------------------------
+1. home button(for brief description of the site)
+2. about me
+3. my friends(with description of friends and add some bookmarks named ;'EASY LINKS')
+4. my hobbies(with their descriptions)
+5. site facts{TIME TO CREATE, DEVELOPER, REASON TO DEVELOP, DEVELOPED WITH, SPECIAL THANKS;}
+
+
+NAME OF THE SITE: FRIENDS;
+THEME:GIVEN;
+FONT:
+//For headers
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+//For writing
+Brush Script MT
+
+ASK FRIENDS THE QUESTIONS
