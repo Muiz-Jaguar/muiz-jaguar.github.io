@@ -1,54 +1,54 @@
-@media screen and (min-width:800px) {
-    #friend-list-container {
-        display: flex;
-        flex-flow: column;
-        justify-content: flex-start;
-        align-items: stretch;
-    }
+@media screen and (min-width: 800px) {
+  #friend-list-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
 }
-@media screen and (max-width:799px;) {
-    #friend-list-container {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (max-width: 799px;) {
+  #friend-list-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 #friend-list-container img {
-    margin: auto;
-    float: left;
-    max-width: 30vw;
-    border-radius: 25%;
-    border: 1vh solid #1a2238;
+  margin: auto;
+  float: left;
+  max-width: 30vw;
+  border-radius: 25%;
+  border: 1vh solid #1a2238;
 }
 
 figcaption a {
-    font-family: "MonteCarlo", cursive;
-    text-align: center;
-    font-style: normal;
-    text-decoration: underline;
-    font-size: 7vw;
+  font-family: "MonteCarlo", cursive;
+  text-align: center;
+  font-style: normal;
+  text-decoration: underline;
+  font-size: 7vw;
 }
 
 figcaption {
-    width: 50vw;
-    margin-left: 5vw;
-    align-self: center;
+  width: 50vw;
+  margin-left: 5vw;
+  align-self: center;
 }
 
 .figure-container {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.figure-container>img{
-    width:40vw;
+.figure-container > img {
+  width: 40vw;
 }
 
 .click-here {
-    font-size: 2vw;
-    font-weight: 1000;
-    font-family: cursive;
+  font-size: 2vw;
+  font-weight: 1000;
+  font-family: cursive;
 }

@@ -4,7 +4,7 @@ body {
   margin:0;
   animation: loading 2s ease;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgba(194, 225, 255, 0.795);
+  background-color: grey;
   color: #1a2238;
   font-size: 2vw;
   -webkit-touch-callout: none; /*for touchscreen devices*/
@@ -175,7 +175,7 @@ ul.small-navbar a:hover {
 /* mobile dropdown */
 
 .dropdown-content {
-  display: block;
+  display: none;
   position: absolute;
   right: 17vw;
   background-color: #1a2238;
@@ -184,8 +184,7 @@ ul.small-navbar a:hover {
   width: 15vw;
   overflow: auto;
   border: 1vw solid rgba(255, 68, 0, 0.9);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
+  border-radius: 10px;
 }
 
 .dropdown-content a {
@@ -201,15 +200,7 @@ div.dropdown-content a:nth-child(2) {
 }
 
 .show-dropdown{
-  animation: topdownslide 2s ease;
-}
-@keyframes topdownslide{
-  from{
-    top:10vw;
-  }
-  to{
-    top:29vw;
-  }
+  display: block;
 }
 /* creating media queries for small devices */
 

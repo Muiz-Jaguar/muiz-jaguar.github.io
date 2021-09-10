@@ -1,26 +1,26 @@
 #lor-collage {
-    margin: auto;
-    max-width: 30vw;
-    border-radius: 25%;
-    border: 1vh solid #1a2238;
-    float: right;
+  margin: auto;
+  max-width: 30vw;
+  border-radius: 25%;
+  border: 1vh solid #1a2238;
+  float: right;
 }
 
 #intro-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 #align-intro-content {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 img {
-    display: block;
-    margin: auto;
-    max-width: 30vw;
-    border-radius: 25%;
-    border: 1vh solid #1a2238;
-    float: left;
+  display: block;
+  margin: auto;
+  max-width: 30vw;
+  border-radius: 25%;
+  border: 1vh solid #1a2238;
+  float: left;
 }

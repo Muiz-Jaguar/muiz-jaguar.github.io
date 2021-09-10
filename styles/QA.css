@@ -1,80 +1,80 @@
 body {
-    font-size: 2vw;
+  font-size: 2vw;
 }
 
 .mobile-dropdown-content {
-    right: 9vw;
+  right: 9vw;
 }
 
 #note {
-    background-color: #FFFF88;
-    width: max-content;
-    text-align: center;
-    width: 70vw;
-    margin: auto;
+  background-color: #ffff88;
+  width: max-content;
+  text-align: center;
+  width: 70vw;
+  margin: auto;
 }
 
 .QnA-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    align-items: flex-start;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
-.QnA-container>div {
-    margin-bottom: 10vw;
+.QnA-container > div {
+  margin-bottom: 10vw;
 }
 
 .questions {
-    color: red;
-    font-weight: 800;
+  color: red;
+  font-weight: 800;
 }
 
 .answers {
-    color: black;
-    font-weight: 800;
+  color: black;
+  font-weight: 800;
 }
-figure.answers{
-    width: max-content;
-    display: block;
-    margin: auto;
+figure.answers {
+  width: max-content;
+  display: block;
+  margin: auto;
 }
-figure.answers>img{
-    display: block;
-    margin: auto;
-    border: 1vw solid black;
-    border-radius: 40%;
-    width: 40vw;
+figure.answers > img {
+  display: block;
+  margin: auto;
+  border: 1vw solid black;
+  border-radius: 40%;
+  width: 40vw;
 }
-figure.answers>figcaption{
-    text-align: center;
+figure.answers > figcaption {
+  text-align: center;
 }
 
 .comments {
-    border: 0.5vw solid blue; 
-    font-weight: 800;
-    width: max-content;
+  border: 0.5vw solid blue;
+  font-weight: 800;
+  width: max-content;
 }
 
-img.comments{
-    width: 40vw;
-    display: block;
-    margin: auto;
-    border: 1vw solid blue;
-    border-radius: 40%;
+img.comments {
+  width: 40vw;
+  display: block;
+  margin: auto;
+  border: 1vw solid blue;
+  border-radius: 40%;
 }
 
 .nocomments {
-    display: none;
+  display: none;
 }
 
 #thanks {
-    border: 1vw solid blue;
-    width: 40vw;
-    display: block;
-    margin: auto;
+  border: 1vw solid blue;
+  width: 40vw;
+  display: block;
+  margin: auto;
 }
-hr{
-    display: block;
-    width: 100%;
+hr {
+  display: block;
+  width: 100%;
 }
