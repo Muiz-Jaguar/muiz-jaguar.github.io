@@ -2,13 +2,20 @@
 const dropdownButton = document.querySelector("li.dropdown-button");
 const dropdownContent = document.querySelector("div.dropdown-content");
 dropdownButton.addEventListener("click", function () {
-  dropdownContent.classList.toggle("show-dropdown");
+  if (dropdownContent.classList.contains("show-dropdown")) {
+    dropdownContent.classList.toggle("hide-dropdown");
+    dropdownContent.classList.remove("show-dropdown");
+  }else{
+    dropdownContent.classList.toggle("show-dropdown");
+    dropdownContent.classList.remove("hide-dropdown");
+  }
 });
 
 window.addEventListener("click", function (e) {
   if (!e.target.matches(".dropdown-part")) {
     if (dropdownContent.classList.contains("show-dropdown")) {
-      dropdownContent.classList.remove("show-dropdown");
+      dropdownContent.classList.toggle("show-dropdown");
+      dropdownContent.classList.toggle("hide-dropdown");
     }
   }
 });

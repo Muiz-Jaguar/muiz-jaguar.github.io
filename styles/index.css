@@ -36,6 +36,7 @@
   }
 }
 blockquote {
+  z-index: -2;
   margin: auto;
   padding: 20px;
   font-weight: 1000;
