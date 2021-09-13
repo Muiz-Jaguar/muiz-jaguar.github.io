@@ -1,11 +1,11 @@
 /* setting the default font family */
 
 body {
-  margin:0;
+  margin: 0;
   animation: loading 2s ease;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: grey;
-  color: #1a2238;
+  background-color: rgb(29, 29, 29);
+  color: azure;
   font-size: 2vw;
   -webkit-touch-callout: none; /*for touchscreen devices*/
   /*for the user select*/
@@ -49,14 +49,7 @@ h2 {
 /* setting the special header background */
 
 .header-content {
-  background: linear-gradient(
-    to right,
-    rgb(255, 186, 59),
-    wheat,
-    azure,
-    lightblue,
-    darkblue
-  );
+  background: linear-gradient(to left, #0cbaba,purple, #380036);
   background-repeat: no-repeat;
   width: auto;
 }
@@ -69,41 +62,26 @@ h2 {
   font-size: 15vw;
   position: static;
   display: inline-block;
-  color: #1a2238;
+  color: white;
   text-decoration: none;
   font-style: normal;
 }
 
 /* here bright means in bright mode */
-.bright-sun{
-  margin-left:6%;
+.sun {
+  margin-left: 6%;
   margin-right: 3px;
   font-size: 3vw;
+  color: #1a2238;
 }
 
-.bright-mode-switch{
+.switch {
   cursor: pointer;
   font-size: 3vw;
+  color: #1a2238;
 }
 
-.bright-moon{
-  margin-left: 1px;
-  font-size: 2.7vw;
-}
-
-/* here dark means in dark mode */
-.dark-sun{
-  margin-left:6%;
-  margin-right: 3px;
-  font-size: 3vw;
-}
-
-.dark-mode-switch{
-  cursor: pointer;
-  font-size: 3vw;
-}
-
-.dark-moon{
+.moon {
   margin-left: 1px;
   font-size: 2.7vw;
 }
@@ -114,7 +92,7 @@ ul.navbar {
   padding: 0;
   margin-bottom: 30px;
   overflow: hidden;
-  background-color: #1a2238;
+  background-color: #1d001c;
   display: flex;
   justify-content: space-evenly;
 }
@@ -142,7 +120,7 @@ ul.small-navbar {
   padding: 0;
   margin-bottom: 30px;
   overflow: hidden;
-  background-color: #1a2238;
+  background-color: #1d001c;
   display: flex;
   justify-content: space-around;
 }
@@ -168,8 +146,11 @@ ul.small-navbar a:hover {
 }
 
 /* styling navbar icons */
-.navbar-icons{
-  color:white;font-size: 3vw;cursor: pointer;margin: 5px;
+.navbar-icons {
+  color: white;
+  font-size: 3vw;
+  cursor: pointer;
+  margin: 5px;
 }
 
 /* mobile dropdown */
@@ -178,13 +159,14 @@ ul.small-navbar a:hover {
   display: none;
   position: absolute;
   right: 17vw;
-  background-color: #1a2238;
+  background-color: #380036;
   text-align: center;
   opacity: 0.97;
   width: 15vw;
   overflow: auto;
-  border: 1vw solid rgba(255, 68, 0, 0.9);
-  border-radius: 10px;
+  border: 1vw solid grey;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .dropdown-content a {
@@ -199,7 +181,7 @@ div.dropdown-content a:nth-child(2) {
   padding-bottom: 4vw;
 }
 
-.show-dropdown{
+.show-dropdown {
   display: block;
 }
 /* creating media queries for small devices */
@@ -219,7 +201,7 @@ div.dropdown-content a:nth-child(2) {
 footer {
   margin-top: 15vh;
   height: 30vh;
-  background-color: #1a2238;
+  background-color: #1d001c;
   color: aliceblue;
   font-size: 2vw;
   text-align: center;

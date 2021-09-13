@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link id="style-sheet" rel="stylesheet" href="styles/theme.css" />
-    <link rel="stylesheet" href="styles/homepage.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <link rel="shortcut icon" href="images/icon.png" />
     <title>AbdulMuiz-HOMEPAGE</title>
   </head>
@@ -27,9 +27,13 @@
     <div class="header-content">
       <div>
         <a href="index.html" class="logo" title="homepage">&nbsp;Abdul Muiz .</a
-        ><i class="fas fa-sun bright-sun" id="sun"></i
-        ><i class="fas fa-toggle-off bright-mode-switch" id="toggle-button" title="nightmode"></i>
-        <i class="far fa-moon bright-moon" id="moon"></i>
+        ><i class="fas fa-sun sun" id="sun"></i
+        ><i
+          class="fas fa-toggle-off switch"
+          id="toggle-button"
+          title="nightmode"
+        ></i>
+        <i class="far fa-moon moon" id="moon"></i>
       </div>
       <!-- navbar for big screens -->
       <ul class="navbar">
@@ -42,19 +46,18 @@
       <!-- navbar for small screens -->
       <ul class="small-navbar">
         <li class="fas fa-home navbar-icons"></li>
-        <li class="dropdown-button dropdown-part">
-          <i class="fas fa-bars dropdown-part navbar-icons"></i>
-          <div class="dropdown-content">
-            <a href="Facts.html">Facts</a>
-            <a href="Aboutme.html">About me</a>
-            <a href="FriendLinks.html">Friends</a>
-          </div>
-        </li>
+        <li class="dropdown-button dropdown-part"></li>
+        <i class="fas fa-bars dropdown-part navbar-icons"></i>
       </ul>
+      <div class="dropdown-content">
+        <a href="Facts.html">Facts</a>
+        <a href="Aboutme.html">About me</a>
+        <a href="FriendLinks.html">Friends</a>
+      </div>
     </div>
     <div class="main-content">
       <img alt="AbdulMuiz's picture" class="muiz-image" />
-      <blockquote class="animated"></blockquote>
+      <blockquote class="animated" id="index-quote"></blockquote>
       <div id="website-intro">
         <h3 id="welcome-header">Assalam-o-alaikum</h3>
         <span style="margin-left: 40px"

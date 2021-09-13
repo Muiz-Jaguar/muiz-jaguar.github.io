@@ -1,7 +1,7 @@
 /* setting the default font family */
 
 body {
-  margin:0;
+  margin: 0;
   animation: loading 2s ease;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: rgba(194, 225, 255, 0.795);
@@ -50,7 +50,7 @@ h2 {
 
 .header-content {
   background: linear-gradient(
-    to right,
+    to bottom right,
     rgb(255, 186, 59),
     wheat,
     azure,
@@ -75,35 +75,19 @@ h2 {
 }
 
 /* here bright means in bright mode */
-.bright-sun{
-  margin-left:6%;
+.sun {
+  color: rgb(250, 255, 175);
+  margin-left: 6%;
   margin-right: 3px;
   font-size: 3vw;
 }
 
-.bright-mode-switch{
+.switch {
   cursor: pointer;
   font-size: 3vw;
 }
 
-.bright-moon{
-  margin-left: 1px;
-  font-size: 2.7vw;
-}
-
-/* here dark means in dark mode */
-.dark-sun{
-  margin-left:6%;
-  margin-right: 3px;
-  font-size: 3vw;
-}
-
-.dark-mode-switch{
-  cursor: pointer;
-  font-size: 3vw;
-}
-
-.dark-moon{
+.moon {
   margin-left: 1px;
   font-size: 2.7vw;
 }
@@ -138,6 +122,7 @@ ul.navbar a:hover {
 /* making the navbar for smaller screens */
 
 ul.small-navbar {
+  position: static;
   list-style-type: none;
   padding: 0;
   margin-bottom: 30px;
@@ -168,16 +153,19 @@ ul.small-navbar a:hover {
 }
 
 /* styling navbar icons */
-.navbar-icons{
-  color:white;font-size: 3vw;cursor: pointer;margin: 5px;
+.navbar-icons {
+  color: white;
+  font-size: 3vw;
+  cursor: pointer;
+  margin: 5px;
 }
 
 /* mobile dropdown */
 
 .dropdown-content {
+  z-index: +2;
   display: block;
   position: absolute;
-  right: 17vw;
   background-color: #1a2238;
   text-align: center;
   opacity: 0.97;
@@ -194,23 +182,24 @@ ul.small-navbar a:hover {
   display: block;
   font-size: 3vw;
   padding: 3vw;
+  border-bottom:0.5vw solid #ec4d1c;
+}
+
+.dropdown-content a:last-child{
+  border-bottom: none;
 }
 
 div.dropdown-content a:nth-child(2) {
   padding-bottom: 4vw;
 }
 
-.show-dropdown{
-  animation: topdownslide 2s ease;
+/* dropdown animated */
+.show-dropdown {
+  display: block;
+  transition: top 2s ease-in-out 0s;
+  top:;
 }
-@keyframes topdownslide{
-  from{
-    top:10vw;
-  }
-  to{
-    top:29vw;
-  }
-}
+
 /* creating media queries for small devices */
 
 @media screen and (min-width: 800px) {
