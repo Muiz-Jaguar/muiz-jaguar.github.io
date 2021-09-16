@@ -1,208 +1,68 @@
 /* setting the default font family */
 
 body {
-  margin: 0;
-  animation: loading 2s ease;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: rgb(29, 29, 29);
   color: azure;
-  font-size: 2vw;
-  -webkit-touch-callout: none; /*for touchscreen devices*/
-  /*for the user select*/
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@keyframes loading {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* setting the link formats */
-
-a {
-  text-decoration: underline;
-  font-style: italic;
-  color: #ec4d1c;
-}
-
-/* selecting every header */
-
-h1 {
-  font-family: "MonteCarlo", cursive;
-  font-weight: 600;
-  font-size: 7vw;
-}
-
-h2 {
-  font-family: "MonteCarlo", cursive;
-  font-weight: 600;
-  font-size: 4vw;
 }
 
 /* setting the special header background */
 
 .header-content {
   background: linear-gradient(to left, #0cbaba,purple, #380036);
-  background-repeat: no-repeat;
-  width: auto;
 }
 
 /* logo styles */
 
 .logo {
-  font-family: "Style Script", cursive;
-  width: auto;
-  font-size: 15vw;
-  position: static;
-  display: inline-block;
   color: white;
-  text-decoration: none;
-  font-style: normal;
 }
 
 /* here bright means in bright mode */
 .sun {
-  margin-left: 6%;
-  margin-right: 3px;
-  font-size: 3vw;
   color: #1a2238;
 }
 
 .switch {
-  cursor: pointer;
-  font-size: 3vw;
   color: #1a2238;
 }
-
-.moon {
-  margin-left: 1px;
-  font-size: 2.7vw;
-}
+/* the moon has the default font color ie azure */
 /* the navbar code */
 
 ul.navbar {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 30px;
-  overflow: hidden;
   background-color: #1d001c;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-ul.navbar > li {
-  float: left;
-  padding: 1vh 0px;
-}
-
-ul.navbar a {
-  color: whitesmoke;
-  text-decoration: none;
-  font-size: 2.5vw;
 }
 
 ul.navbar a:hover {
   transition: color 0.5s ease-out 0.01s;
-  color: #ff6a3d;
+  color: aqua;
 }
 
 /* making the navbar for smaller screens */
 
 ul.small-navbar {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 30px;
-  overflow: hidden;
   background-color: #1d001c;
-  display: flex;
-  justify-content: space-around;
-}
-
-ul.small-navbar > li {
-  float: left;
-}
-
-ul.small-navbar a {
-  color: whitesmoke;
-  text-decoration: none;
-  height: 3.3vw;
 }
 
 ul.small-navbar a:hover {
   transition: color 0.5s ease-out 0.01s;
-  color: #ff6a3d;
+  color: aquamarine;
   cursor: pointer;
 }
-
-#menu {
-  margin: auto;
-}
-
-/* styling navbar icons */
-.navbar-icons {
-  color: white;
-  font-size: 3vw;
-  cursor: pointer;
-  margin: 5px;
-}
-
 /* mobile dropdown */
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  right: 17vw;
   background-color: #380036;
-  text-align: center;
-  opacity: 0.97;
-  width: 15vw;
-  overflow: auto;
   border: 1vw solid grey;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
 }
 
 .dropdown-content a {
-  text-decoration: none;
-  color: whitesmoke;
-  display: block;
-  font-size: 3vw;
-  padding: 3vw;
+  border-bottom: 0.5vw solid grey;
 }
 
-div.dropdown-content a:nth-child(2) {
-  padding-bottom: 4vw;
-}
-
-.show-dropdown {
-  display: block;
-}
-/* creating media queries for small devices */
-
-@media screen and (min-width: 800px) {
-  ul.small-navbar {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 799px) {
-  ul.navbar {
-    display: none;
-  }
+.dropdown-content a:last-child{
+  border-bottom: none;
 }
 
 footer {
-  margin-top: 15vh;
-  height: 30vh;
   background-color: #1d001c;
-  color: aliceblue;
-  font-size: 2vw;
-  text-align: center;
 }

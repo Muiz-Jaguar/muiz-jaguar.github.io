@@ -7,11 +7,8 @@ body {
   background-color: rgba(194, 225, 255, 0.795);
   color: #1a2238;
   font-size: 2vw;
-  -webkit-touch-callout: none; /*for touchscreen devices*/
+  touch-action: none; /*for touchscreen devices*/
   /*for the user select*/
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -49,6 +46,8 @@ h2 {
 /* setting the special header background */
 
 .header-content {
+  position: relative;
+  z-index: 2;
   background: linear-gradient(
     to bottom right,
     rgb(255, 186, 59),
@@ -59,6 +58,7 @@ h2 {
   );
   background-repeat: no-repeat;
   width: auto;
+  margin-bottom: 0;
 }
 
 /* logo styles */
@@ -92,10 +92,15 @@ h2 {
   font-size: 2.7vw;
 }
 /* the navbar code */
+div.navbar-container{
+  position: relative;
+  z-index: 1;
+}
 
 ul.navbar {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   margin-bottom: 30px;
   overflow: hidden;
   background-color: #1a2238;
@@ -122,7 +127,7 @@ ul.navbar a:hover {
 /* making the navbar for smaller screens */
 
 ul.small-navbar {
-  position: static;
+  margin: 0;
   list-style-type: none;
   padding: 0;
   margin-bottom: 30px;
@@ -160,15 +165,14 @@ ul.small-navbar a:hover {
   margin: 5px;
 }
 /* mobile dropdown */
-
 .dropdown-content {
-  z-index: -1;
   display: block;
   position: absolute;
+  z-index: -1;
   right: 17vw;
   background-color: #1a2238;
   text-align: center;
-  opacity: 0.97;
+  opacity: 1;
   width: 15vw;
   overflow: auto;
   border: 1vw solid rgba(255, 68, 0, 0.9);
