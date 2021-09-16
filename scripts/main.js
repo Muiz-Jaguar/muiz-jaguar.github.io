@@ -13,11 +13,8 @@ dropdownButton.addEventListener("click", function () {
 
 window.addEventListener("click", function (e) {
   if (!e.target.matches(".dropdown-part")) {
-    console.log("dropdown-part didnt match")
     if(!e.target.matches(".dropdown-content")){
-      console.log("dropdown-content didnt match")
       if(!e.target.matches(".dropdown-links")){
-        console.log("dropdown-links didnt match")
         if (dropdownContent.classList.contains("show-dropdown")) {
           dropdownContent.classList.remove("show-dropdown");
           dropdownContent.classList.add("hide-dropdown");

@@ -58,17 +58,6 @@ blockquote.animated {
   -ms-animation: quote-color-SE 3s ease-in-out 0s infinite alternate;
 }
 
-blockquote.dark-animated {
-  border: 1vh solid aquamarine;
-  background-color: #380036;
-  color: #4db9b9;
-  animation: dark-quote-color-SE 3s ease-in-out 0s infinite alternate;
-  -webkit-animation: dark-quote-color-SE 3s ease-in-out 0s infinite alternate;
-  -o-animation: dark-quote-color-SE 3s ease-in-out 0s infinite alternate;
-  -moz-animation: dark-quote-color-SE 3s ease-in-out 0s infinite alternate;
-  -ms-animation: dark-quote-color-SE 3s ease-in-out 0s infinite alternate;
-}
-
 #website-intro {
   align-self: center;
   text-align: justify;
