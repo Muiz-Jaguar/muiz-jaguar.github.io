@@ -8,7 +8,7 @@ body {
 /* setting the special header background */
 
 .header-content {
-  background: linear-gradient(to left, #0cbaba,purple, #380036);
+  background: linear-gradient(to left, #0cbaba, purple, #380036);
 }
 
 /* logo styles */
@@ -59,7 +59,7 @@ ul.small-navbar a:hover {
   border-bottom: 0.5vw solid grey;
 }
 
-.dropdown-content a:last-child{
+.dropdown-content a:last-child {
   border-bottom: none;
 }
 
@@ -67,7 +67,7 @@ footer {
   background-color: #1d001c;
 }
 
-img{
+img {
   border: 1vw solid aquamarine;
 }
 
@@ -83,3 +83,7 @@ blockquote.dark-animated {
   -ms-animation: dark-quote-color-SE 3s ease-in-out 0s infinite alternate;
 }
 
+/* for the QA pages */
+#note {
+  background-color: #380036;
+}

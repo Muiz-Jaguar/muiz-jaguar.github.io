@@ -7,8 +7,8 @@ let quotes = [
 ];
 
 let randomChoice = quotes[randomNumber];
-mainQuote.innerHTML = randomChoice;//mainQuote already defined in main.js
+mainQuote.innerHTML = randomChoice; //mainQuote already defined in main.js
 
 //randomizing the images
 randomNumber = Math.round(Math.random() * 5 + 1);
-myPic.src = `images/mypix/mypic${randomNumber}.jpeg`;//myPic already defined in main.js
+myPic.src = `images/mypix/mypic${randomNumber}.jpeg`; //myPic already defined in main.js

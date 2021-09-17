@@ -1,8 +1,16 @@
 body {
   font-size: 2vw;
 }
+ul.small-navbar {
+  align-items: center;
+}
 
-.mobile-dropdown-content {
+.caret-backlink {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.dropdown-content {
   right: 9vw;
 }
 

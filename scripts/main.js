@@ -5,7 +5,7 @@ dropdownButton.addEventListener("click", function () {
   if (dropdownContent.classList.contains("show-dropdown")) {
     dropdownContent.classList.remove("show-dropdown");
     dropdownContent.classList.add("hide-dropdown");
-  }else{
+  } else {
     dropdownContent.classList.remove("hide-dropdown");
     dropdownContent.classList.add("show-dropdown");
   }
@@ -13,15 +13,15 @@ dropdownButton.addEventListener("click", function () {
 
 window.addEventListener("click", function (e) {
   if (!e.target.matches(".dropdown-part")) {
-    if(!e.target.matches(".dropdown-content")){
-      if(!e.target.matches(".dropdown-links")){
+    if (!e.target.matches(".dropdown-content")) {
+      if (!e.target.matches(".dropdown-links")) {
         if (dropdownContent.classList.contains("show-dropdown")) {
           dropdownContent.classList.remove("show-dropdown");
           dropdownContent.classList.add("hide-dropdown");
         }
+      }
+    }
   }
-  }
-}
 });
 
 //making the nightmode switch
@@ -29,7 +29,7 @@ const toggleBtn = document.getElementById("toggle-button");
 const sun = document.getElementById("sun");
 const moon = document.getElementById("moon");
 const darkThemeStylesheet = document.getElementById("dark-theme-css");
-const mainQuote=document.getElementById("index-quote")
+const mainQuote = document.getElementById("index-quote");
 const myPic = document.querySelector("img.muiz-image");
 var isDark = false;
 
@@ -47,10 +47,10 @@ toggleBtn.addEventListener("click", function () {
       sun.className = "far fa-sun sun";
       moon.className = "fas fa-moon moon";
       swapStyleSheets("styles/darktheme.css");
-      if(mainQuote){
-        mainQuote.className="dark-animated"
+      if (mainQuote) {
+        mainQuote.className = "dark-animated";
       }
-      if(myPic){
+      if (myPic) {
         myPic.classList.toggle("darkmode-img-border");
       }
     }
@@ -61,10 +61,10 @@ toggleBtn.addEventListener("click", function () {
     sun.className = "fas fa-sun sun";
     moon.className = "far fa-moon moon";
     swapStyleSheets("styles/theme.css");
-    if(mainQuote){
-      mainQuote.className="animated"
+    if (mainQuote) {
+      mainQuote.className = "animated";
     }
-    if(myPic){
+    if (myPic) {
       myPic.classList.toggle("darkmode-img-border");
     }
     isDark = false;

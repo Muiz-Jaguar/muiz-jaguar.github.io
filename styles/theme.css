@@ -92,7 +92,7 @@ h2 {
   font-size: 2.7vw;
 }
 /* the navbar code */
-div.navbar-container{
+div.navbar-container {
   position: relative;
   z-index: 1;
 }
@@ -187,10 +187,10 @@ ul.small-navbar a:hover {
   display: block;
   font-size: 3vw;
   padding: 3vw;
-  border-bottom:0.5vw solid #ec4d1c;
+  border-bottom: 0.5vw solid #ec4d1c;
 }
 
-.dropdown-content a:last-child{
+.dropdown-content a:last-child {
   border-bottom: none;
 }
 
@@ -203,7 +203,7 @@ div.dropdown-content a:nth-child(2) {
   transition: transform 0.8s ease-in-out 0s;
   transform: translateY(0vw);
 }
-.hide-dropdown{
+.hide-dropdown {
   transition: transform 0.8s ease-in-out 0s;
   transform: translateY(-40vw);
 }
