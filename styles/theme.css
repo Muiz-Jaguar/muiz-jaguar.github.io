@@ -46,8 +46,9 @@ h2 {
 /* setting the special header background */
 
 .header-content {
+  /*below is the code for adding the animation 
   position: relative;
-  z-index: 2;
+  z-index: 2; */
   background: linear-gradient(
     to bottom right,
     rgb(255, 186, 59),
@@ -91,11 +92,12 @@ h2 {
   margin-left: 1px;
   font-size: 2.7vw;
 }
-/* the navbar code */
+/* the navbar code*/
+/*add this for the animation
 div.navbar-container {
   position: relative;
   z-index: 1;
-}
+} */
 
 ul.navbar {
   list-style-type: none;
@@ -166,9 +168,8 @@ ul.small-navbar a:hover {
 }
 /* mobile dropdown */
 .dropdown-content {
-  display: block;
+  display: none;
   position: absolute;
-  z-index: -1;
   right: 17vw;
   background-color: #1a2238;
   text-align: center;
@@ -178,7 +179,6 @@ ul.small-navbar a:hover {
   border: 1vw solid rgba(255, 68, 0, 0.9);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-  transform: translateY(-40vw);
 }
 
 .dropdown-content a {
@@ -198,14 +198,9 @@ div.dropdown-content a:nth-child(2) {
   padding-bottom: 6vw;
 }
 
-/* dropdown animated */
+/* dropdown visibility reset */
 .show-dropdown {
-  transition: transform 0.8s ease-in-out 0s;
-  transform: translateY(0vw);
-}
-.hide-dropdown {
-  transition: transform 0.8s ease-in-out 0s;
-  transform: translateY(-40vw);
+  display:block;
 }
 
 /* creating media queries for small devices */

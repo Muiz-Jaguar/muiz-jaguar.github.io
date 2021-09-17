@@ -87,3 +87,9 @@ blockquote.dark-animated {
 #note {
   background-color: #380036;
 }
+
+.answers{
+  color: white;
+  background-color: black;
+  width: max-content;
+}
