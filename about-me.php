@@ -25,39 +25,9 @@
   </head>
 
   <body>
-    <div class="header-content">
-      <a href="index.html" class="logo" title="homepage">&nbsp;Abdul Muiz .</a>
-      <i class="fas fa-sun sun" id="sun"></i>
-      <i
-        class="fas fa-toggle-off switch"
-        id="toggle-button"
-        title="nightmode"
-      ></i>
-      <i class="far fa-moon moon" id="moon"></i>
-    </div>
-    
-    
-    <div class="navbar-container">
-      <!-- navbar for big screens -->
-      <ul class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Aboutme.html">About Me</a></li>
-        <li><a href="Facts.html">Facts</a></li>
-        <li><a href="FriendLinks.html"> My friends </a></li>
-      </ul>
-      <!-- navbar for small screens -->
-      <ul class="small-navbar">
-        <li><a class="fas fa-home navbar-icons" href="index.html"></a></li>
-        <li class="dropdown-part">
-          <a class="fas fa-bars navbar-icons dropdown-button dropdown-part"></a>
-          <div class="dropdown-content">
-            <a href="Facts.html" class="dropdown-links">Facts</a>
-            <a href="Aboutme.html" class="dropdown-links">About me</a>
-            <a href="FriendLinks.html" class="dropdown-links">Friends</a>
-          </div>
-        </li>
-      </ul>
-    </div>
+
+    <?php include "./src/base/header.php" ?>
+
     <div id="intro-container">
       <img src="images/meandaffan.jpeg" alt="Muiz with Affan" />
       <img src="images/meandmunim.jpeg" alt="Muiz with Munim" />
