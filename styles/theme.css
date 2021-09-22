@@ -7,7 +7,7 @@ body {
   background-color: rgba(194, 225, 255, 0.795);
   color: #1a2238;
   font-size: 2vw;
-  touch-action: none; /*for touchscreen devices*/
+/*   touch-action: none; /*for touchscreen devices*/ */
   /*for the user select*/
   user-select: none;
 }
